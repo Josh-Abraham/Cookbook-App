@@ -1,0 +1,102 @@
+.pageSet {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
+.internalPageLeft {
+  background-color: #ffffff;
+  color: #785e3a;
+  border: 1px solid #c2b5a3;
+  overflow: hidden;
+  margin-left: 15px;
+  height: 100vh;
+  width: calc(50vw - 130px);
+}
+
+.pageStackLeft {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ffffff,
+    #ffffff 3px,
+    #785e3a 3px,
+    #785e3a 3.5px /* determines size */
+  );
+  border: 1px solid #c2b5a3;
+  border-radius: 15px 0px 0px 15px;
+  margin-left: 15px;
+  height: 100vh;
+  width: 10px;
+  float: left;
+}
+
+.pageStackRight {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ffffff,
+    #ffffff 3px,
+    #785e3a 3px,
+    #785e3a 3.5px /* determines size */
+  );
+  border: 1px solid #c2b5a3;
+  border-radius: 0px 15px 15px 0px;
+  height: 100vh;
+  width: 10px;
+  float: right;
+  margin-right: 16px;
+}
+
+.internalPageRight {
+  background-color: #ffffff;
+  color: #785e3a;
+  border: 1px solid #c2b5a3;
+  overflow: hidden;
+  height: 100vh;
+  width: calc(50vw - 130px);
+}
+
+.externalPage {
+  background-color: #28464e;
+}
+
+.toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  margin-bottom: 1em;
+  width: auto;
+  height: 90vh;
+  overflow: auto
+}
+
+.toc_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+ul.leaders li:before {
+  float: left;
+  padding-left: 20px;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+}
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}

@@ -1,0 +1,54 @@
+.dropdownWrapper{
+  width: 250px;
+  padding-top: 20px;
+  .dropdownSelect {
+    width: 100%;
+    .tooltipWrapper {
+      position: relative;
+      display: inline-block;
+      .icon {
+        margin-left: 190px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.tooltipWrapper .tooltipText {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(239, 239, 239);
+  text-align: center;
+  padding: 5px 2px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: 45px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltipWrapper .tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(239, 239, 239) transparent transparent transparent;
+}
+
+.tooltipWrapper:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltipWrapper:hover .icon {
+  color: #7F003F;
+}

@@ -1,0 +1,66 @@
+.pages {
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:40px;
+  left:0px;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  touch-action: none;
+}
+
+.cover {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  overflow: hidden
+}
+.cover img {
+  flex-shrink: 0;
+  min-width: 50%;
+  min-height: 50%;
+  object-fit: cover;
+}
+
+.backcover {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  overflow: hidden
+}
+.backcover img {
+  flex-shrink: 0;
+  min-width: 50%;
+  min-height: 50%
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomButton {
+  width: 200px;
+  height: 40px;
+}
+
+.page1 {
+  background-color: pink;
+}
+
+.page2 {
+  background-color: yellow;
+}
+
+.page3 {
+  background-color: aqua;
+}

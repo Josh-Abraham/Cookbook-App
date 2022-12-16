@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import FlippingPages from 'flipping-pages'
+import { FlippingPages } from 'flipping-pages';
+import 'flipping-pages/dist/style.css';
 import Button from '@material-ui/core/Button';
 import { TextField as TextFieldUI } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import { COLOUR_THEME } from './constants';
 import AddRecipe from './AddRecipe';
 import AddCustomRecipe from './AddCustomRecipe';
-/* IMPORTANT */
-import 'flipping-pages/FlippingPages.css'
 import './Main.scss';
 import Page from './Page';
 import TableOfContents from './TableOfContents'
